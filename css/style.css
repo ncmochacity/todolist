@@ -21,13 +21,37 @@ h2{
 	border-bottom: 3px solid #dfdfdf;
 }
 #content{
-	background-color: #fff;
+	background-color: #dfdfdf;
+}
+#myTask {
+	list-style: none;
+	background-color: #ff9999;
+}
+#myTask li{
+	color:#666;
+	font-family: inherit;
+	font-weight: 100;
+	font-size: 1.7em;
+	border:1px solid #fff;
+	text-align: center;
 }
 input[type="text"]{
 	background-color: #ccc;
+
+}
+input[type="submit"]{
+	background-color: #ff9999;
+	width:150px;
+	color:#fff;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 1em;
+	height:50px;
+	border:2px solid #dfdfdf;
 }
 #footer{
 	background-color: #dfdfdf;
+	margin-top: 90px;
 	padding:30px 20px 10px 20px;
 }
 #footer p{
@@ -36,3 +60,5 @@ input[type="text"]{
 	font-size: 1.4em;
 	text-align: center;
 }
+
+

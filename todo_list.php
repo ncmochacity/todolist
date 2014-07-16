@@ -35,6 +35,26 @@
 			<label>&nbsp;</label>
 			<input type="submit" value="Add Task"> <br />
 		</form>
+		<?php if (count ($todo_list) > 0 ) : ?>
+		<h2>Delete Task</h2>
+		<form action="." method="post">
+			<?php foreach($todo_list as $myTask) : ?>
+				<input type="hidden" name="toDolist[]" value="<?php echo $myTask; ?>">
+			<?php endforeach; ?>
+			<input type="hidden" name="action" value="delete">
+			<label>Task: </label>
+			<select name="taskid">
+				<?php foreach($todo_list as $id => $myTask) : ?>
+					<option value="<?php echo $id; ?>">
+						<?php echo $myTask; ?>
+					</option>
+				<?php endforeach; ?>
+			</select>
+			<br />
+			<label>&nbsp;</label>
+			<input type="submit" value="Delete">
+		</form>
+		<?php endif; ?>
 	</div>
 </div>
 <?php include 'view/footer.php'; ?>
